@@ -12,7 +12,7 @@ def load_mnist():
     encoder = OneHotEncoder(sparse_output=False)
     y_onehot = encoder.fit_transform(y.reshape(-1, 1))
     
-    return train_test_split(X.T, y_onehot.T, test_size=0.2, random_state=42)
+    return train_test_split(X, y_onehot, test_size=0.2, random_state=42)
 
 # Problem 4 & 5: Activation Functions
 class ReLU:
