@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.datasets import fetch_openml
 
-# Problem 1: Load MNIST Dataset
+# Problem 1: Load MNIST dataset
 def load_mnist():
     mnist = fetch_openml('mnist_784', version=1, as_frame=False)
     X = mnist.data / 255.0
